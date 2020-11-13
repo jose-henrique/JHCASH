@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    color: #ffffff;
+    background: #ebf2f5;
+}
+
+body, input, btton, textarea {
+    font: 600 18px Bangers, sans-serif;
+}
+
+:root {
+    --primary: #8B59F2;
+    --secondary: #25DE00;
+    --white: #fefefe;
+    --text-in-input: #000000;
+    --secondary-dark: #1FBC00;
+    --button: #433CBD;
+    --button-hover: #332E8B;
+}

@@ -1,0 +1,205 @@
+@keyframes fade{
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }to{
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes float{
+    from{
+        transform: scale(1) translateY(0)
+    }
+    to {
+        transform: scale(.6) translateY(-10px);
+    }
+}
+
+
+
+.container-signup{
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-signup .btn-goBack{
+    top: 0;
+    left: 10px;
+
+    position: absolute;
+    width: 56px;
+    height: 56px;
+
+    background: none;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+.container-signup .info-area{
+    position: absolute;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 56vh;
+}
+
+.container-signup .info-area p {
+    font-size: 64px;
+}
+
+.container-signup .info-area p strong {
+    font-size: 144px;
+    color: var(--secondary)
+}
+
+.container-signup .input-container{
+    margin-top: 32vh;
+    width: 100vw;
+    background: var(--white);
+    height: 70vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-signup .input-container  form{
+    margin-top: 70px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+
+.container-signup .input-container .EmailLabel{
+    
+}
+
+.container-signup .input-container .PasswordLabel {
+    position: absolute;
+    color: var(--primary);
+    margin-left: -850px;
+    margin-top: -100px;
+}
+
+.container-signup .input-container .PasswordAgainLabel{
+    position: absolute;
+    color: var(--primary);
+    margin-left: -850px;
+    margin-top: 80px;
+}
+
+
+.container-signup .input-container form .emailfield {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.container-signup .input-container form .emailfield label{
+    color: var(--secondary);
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.container-signup .input-container form .emailfield input{
+    width: 100%;
+    border-radius: 20px;
+    height: 50px;
+    background: #e9e9e9;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.container-signup .input-container form .emailfield input:hover{
+    border: 2px solid var(--secondary);
+}
+
+.container-signup .input-container form .passwordfield{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.container-signup .input-container form .passwordfield label{
+    position: absolute;
+    color: var(--secondary);
+    margin-top: -20px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.container-signup .input-container form .passwordfield input{
+    width: 100%;
+    border-radius: 20px;
+    height: 50px;
+    background: #e9e9e9;
+    transition: 0.5s;
+    font-size: 30px;
+    
+}
+
+.container-signup .input-container form .passwordfield input:hover{
+    border: 2px solid var(--secondary);
+}
+
+.container-signup .input-container form .passwordAgainField{
+    width: 100%;
+}
+
+.container-signup .input-container form .passwordAgainField label{
+    position: absolute;
+    color: var(--secondary);
+    margin-top: -20px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.container-signup .input-container form .passwordAgainField input{
+    width: 100%;
+    border-radius: 20px;
+    height: 50px;
+    background: #e9e9e9;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.container-signup .input-container form .passwordAgainField input:hover{
+    border: 2px solid var(--secondary);
+}
+
+.container-signup .input-container form .btn-signup {
+    margin-top: 40px;
+    background: var(--secondary);
+    padding: 10px 60px;
+    border-radius: 20px;
+    
+    color: var(--white);
+    text-decoration: none;
+    font-size: 36px;
+    font-family: Bangers;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.container-signup .input-container form button:hover{
+    background: var(--secondary-dark);
+}

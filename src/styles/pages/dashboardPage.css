@@ -1,0 +1,39 @@
+.container-dashboard{
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-dashboard .btn-goBack{
+    top: 0;
+    left: 10px;
+
+    position: absolute;
+    width: 56px;
+    height: 56px;
+
+    background: none;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+.container-dashboard h1{
+    color: var(--secondary);
+    font-size: 89px;
+
+}
+
+.container-dashboard p {
+    font-size: 39px;
+    margin-left: 110px;
+}

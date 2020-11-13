@@ -1,0 +1,134 @@
+@keyframes fade{
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }to{
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+
+
+.container-login{
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login .btn-goBack{
+    top: 0;
+    left: 10px;
+
+    position: absolute;
+    width: 56px;
+    height: 56px;
+
+    background: none;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+.container-login .info-area{
+    position: absolute;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 56vh;
+}
+
+.container-login .info-area p {
+    font-size: 64px;
+}
+
+.container-login .info-area p strong {
+    font-size: 144px;
+    color: var(--secondary)
+}
+
+.container-login .input-container{
+    margin-top: 32vh;
+    width: 100vw;
+    background: var(--white);
+    height: 70vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login .input-container  form{
+    margin-top: 70px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+
+.container-login .input-container .EmailLabel{
+    position: absolute;
+    color: var(--primary);
+    margin-left: -875px;
+    margin-top: -300px;
+    font-size: 20px;
+}
+
+.container-login .input-container .PasswordLabel {
+    position: absolute;
+    color: var(--primary);
+    margin-left: -850px;
+    margin-top: -113px;
+    font-size: 20px;
+}
+
+
+.container-login .input-container form input{
+    width: 100%;
+    border-radius: 20px;
+    height: 50px;
+    background: #e9e9e9;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.container-login .input-container form input:hover{
+    border: 2px solid var(--primary);
+
+}
+.container-login .input-container form .EmailField {
+    margin-bottom: 40px;
+}
+
+
+.container-login .input-container form button {
+    margin-top: 70px;
+    background: var(--button);
+    padding: 10px 60px;
+    border-radius: 20px;
+    
+    color: var(--white);
+    text-decoration: none;
+    font-size: 36px;
+    font-family: Bangers;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.container-login .input-container form button:hover{
+    background: var(--button-hover);
+}
