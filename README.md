@@ -1,6 +1,6 @@
 # JHCASH (Web version)
 
-![show presentation]('./gitimages/home.jpg')
+![show presentation]('/gitimages/home.jpg')
 
 Here is my project in react, just for *pratice my skills for now is a simple landing, login, and signup pages, whose i try to train some animations. 
 i pretend update it soon, with real authenticate in backend, and a mobile version.
@@ -21,10 +21,10 @@ i pretend update it soon, with real authenticate in backend, and a mobile versio
 
 ### Login
 
-![Login]('./gitimages/login.png')
+![Login]('/gitimages/login.png')
 
 
 ### SignUp
 
-![SignUp]('./gitimages/signup.png')
+![SignUp]('/gitimages/signup.png')
 
