@@ -1,6 +1,10 @@
-# JHCASH (Web version)
+<h1 align="center">
+    JHCASH (Web version)
+</h1>
 
-![show presentation]('gitimages/home.jpg')
+<p align="center">
+    <img alt="JHCASH" src="gitimages/home.jpg" width="100%"/>
+</p>
 
 Here is my project in react, just for *pratice my skills for now is a simple landing, login, and signup pages, whose i try to train some animations. 
 i pretend update it soon, with real authenticate in backend, and a mobile version.
@@ -21,10 +25,15 @@ i pretend update it soon, with real authenticate in backend, and a mobile versio
 
 ### Login
 
-![Login]('gitimages/login.png')
+<p align="center">
+    <img alt="LOGIN" src="gitimages/login.png" width="100%"/>
+</p>
+
 
 
 ### SignUp
 
-![SignUp]('gitimages/signup.png')
+<p align="center">
+    <img alt="SIGNUP" src="gitimages/signup.png" width="100%"/>
+</p>
 
