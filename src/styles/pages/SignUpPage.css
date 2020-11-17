@@ -86,36 +86,16 @@
     animation-duration: 1s;
 }
 
-
-.container-signup .input-container .EmailLabel{
-    
-}
-
-.container-signup .input-container .PasswordLabel {
-    position: absolute;
-    color: var(--primary);
-    margin-left: -850px;
-    margin-top: -100px;
-}
-
-.container-signup .input-container .PasswordAgainLabel{
-    position: absolute;
-    color: var(--primary);
-    margin-left: -850px;
-    margin-top: 80px;
-}
-
-
 .container-signup .input-container form .emailfield {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 .container-signup .input-container form .emailfield label{
     color: var(--secondary);
     position: absolute;
-    margin-top: -20px;
-    margin-left: 15px;
+    margin-top: -23px;
+    margin-left: 1.5%;
     font-size: 20px;
 }
 
@@ -134,14 +114,14 @@
 
 .container-signup .input-container form .passwordfield{
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 .container-signup .input-container form .passwordfield label{
     position: absolute;
     color: var(--secondary);
-    margin-top: -20px;
-    margin-left: 15px;
+    margin-top: -23px;
+    margin-left: 1.5%;
     font-size: 20px;
 }
 
@@ -166,8 +146,8 @@
 .container-signup .input-container form .passwordAgainField label{
     position: absolute;
     color: var(--secondary);
-    margin-top: -20px;
-    margin-left: 15px;
+    margin-top: -23px;
+    margin-left: 1.5%;
     font-size: 20px;
 }
 
@@ -202,4 +182,76 @@
 
 .container-signup .input-container form button:hover{
     background: var(--secondary-dark);
+}
+
+@media(max-width: 500px){
+    .container-signup{
+        width: 100vw;
+        height: 100vh;
+    }
+    .container-signup .info-area{
+        position: absolute;
+        max-width: 300px;
+        margin-top: 8%;
+        margin-right: 25%;
+    }
+    
+    .container-signup .info-area p {
+        font-size: 45px;
+    }
+    
+    .container-signup .info-area p strong {
+        font-size: 90px;
+    }
+    .container-signup .input-container{
+        height: 90vh;
+    }
+    .container-signup .input-container  form{
+        width: 80%;
+    }
+
+    .container-signup .input-container .EmailLabel{
+        margin-left: -67%;
+    }
+    
+    .container-signup .input-container .PasswordLabel {
+        margin-left: -60%;    
+    }
+    .container-signup .input-container form button{
+        width: 90%;
+    }
+}
+
+@media(max-height: 470px){
+    .container-signup{
+        width: 100vw;
+        height: 100vh;
+    }
+    .container-signup .info-area{
+        position: absolute;
+        max-width: 200px;
+        margin-top: -13%;
+        margin-right: -3%;
+    }
+    
+    .container-signup .info-area p {
+        font-size: 25px;
+    }
+    
+    .container-signup .info-area p strong {
+        font-size: 50px;
+    }
+
+    .container-signup .input-container{
+        margin-bottom: -40%;
+        height: 180vh;
+    }
+
+    .container-signup .input-container form{
+        margin-top: 24%;
+    }
+
+    .container-signup .input-container form button{
+        margin-top: -7%;
+    }
 }

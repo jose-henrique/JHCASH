@@ -28,22 +28,25 @@ function LoginPage(){
             </div>
             <div className="input-container">
                 <form onSubmit={handleLogin}>
-                    <label htmlFor="EmailField" className="EmailLabel">Email</label>
-                    <input 
-                    type="text" 
-                    id="EmailField" 
-                    className="EmailField"
-                    value={email}
-                    onChange={event => setEmail(event.target.value)}
-                    required/>
-                    <label htmlFor="PasswordField"  className="PasswordLabel">Password</label>
-                    <input 
-                    type="password" 
-                    id="PasswordField" 
-                    className="PasswordField"
-                    value={password}
-                    onChange={event => setPassword(event.target.value)}
-                    required/>
+                    <div className="emailcontainer">
+                        <label htmlFor="EmailField">Email</label>
+                        <input 
+                        type="text" 
+                        id="EmailField" 
+                        value={email}
+                        onChange={event => setEmail(event.target.value)}
+                        required/>
+                    </div>
+                    <div className="passwordcontainer">
+                        <label htmlFor="PasswordField">Password</label>
+                        <input 
+                        type="password" 
+                        id="PasswordField" 
+                        value={password}
+                        onChange={event => setPassword(event.target.value)}
+                        required/>
+                    </div>
+
                     <button>Login</button>
                 </form>
             </div>

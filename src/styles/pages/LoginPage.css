@@ -77,25 +77,44 @@
     animation-duration: 1s;
 }
 
-
-.container-login .input-container .EmailLabel{
-    position: absolute;
-    color: var(--primary);
-    margin-left: -875px;
-    margin-top: -300px;
-    font-size: 20px;
+.container-login .input-container form .emailcontainer {
+    width: 100%;
+    margin-bottom: 60px;
 }
 
-.container-login .input-container .PasswordLabel {
-    position: absolute;
-    color: var(--primary);
-    margin-left: -850px;
-    margin-top: -113px;
-    font-size: 20px;
+.container-login .input-container form .passwordcontainer  {
+    width: 100%;
 }
 
 
-.container-login .input-container form input{
+.container-login .input-container form .emailcontainer label{
+    position: absolute;
+    color: var(--primary);
+    font-size: 20px;
+    margin-top: -23px;
+    margin-left: 2%;
+}
+
+.container-login .input-container form .passwordcontainer label {
+    position: absolute;
+    color: var(--primary);
+    font-size: 20px;
+    margin-left: 2%;
+    margin-top: -23px;
+}
+
+
+.container-login .input-container form .emailcontainer input{
+    width: 100%;
+    border-radius: 20px;
+    height: 50px;
+    background: #e9e9e9;
+    transition: 0.5s;
+    font-size: 30px;
+    
+}
+
+.container-login .input-container form .passwordcontainer input{
     width: 100%;
     border-radius: 20px;
     height: 50px;
@@ -108,10 +127,6 @@
     border: 2px solid var(--primary);
 
 }
-.container-login .input-container form .EmailField {
-    margin-bottom: 40px;
-}
-
 
 .container-login .input-container form button {
     margin-top: 70px;
@@ -131,4 +146,75 @@
 
 .container-login .input-container form button:hover{
     background: var(--button-hover);
+}
+
+
+@media(max-width: 500px){
+    .container-login{
+        width: 100vw;
+        height: 100vh;
+    }
+    .container-login .info-area{
+        position: absolute;
+        max-width: 300px;
+        margin-top: 8%;
+        margin-right: 25%;
+    }
+    
+    .container-login .info-area p {
+        font-size: 45px;
+    }
+    
+    .container-login .info-area p strong {
+        font-size: 90px;
+    }
+    .container-login .input-container{
+        height: 90vh;
+    }
+    .container-login .input-container  form{
+        margin-top: 20%;
+        width: 80%;
+    }
+
+    .container-login .input-container .EmailLabel{
+        margin-left: -67%;
+    }
+    
+    .container-login .input-container .PasswordLabel {
+        margin-left: -60%;    
+    }
+    .container-login .input-container form button{
+        width: 90%;
+    }
+}
+
+@media(max-height: 470px){
+    .container-login{
+        width: 100vw;
+        height: 100vh;
+    }
+    .container-login .info-area{
+        position: absolute;
+        max-width: 200px;
+        margin-top: -13%;
+        margin-right: -3%;
+    }
+    
+    .container-login .info-area p {
+        font-size: 25px;
+    }
+    
+    .container-login .info-area p strong {
+        font-size: 50px;
+    }
+
+    .container-login .input-container{
+        margin-bottom: -20%;
+        height: 120vh;
+    }
+
+    .container-login .input-container form button{
+        width: 90%;
+        margin-top: 20%;
+    }
 }

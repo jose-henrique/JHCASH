@@ -18,6 +18,7 @@
     font-size: 64px;
 }
 
+
 .container .info-area p strong {
     font-size: 144px;
     color: var(--secondary)
@@ -67,4 +68,73 @@
 
 .container .button-area .signup:hover{
     background: var(--secondary-dark);
+}
+
+@media (max-width: 500px){
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+    .container .info-area{
+        max-width: 300px;
+        margin-bottom: 200px;
+    }
+    .container .info-area p {
+        font-size: 50px;
+    }
+    
+    .container .info-area p strong {
+        font-size: 82px;
+    }
+
+    .container .button-area {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .button-area .login {
+        background: var(--button);
+        padding: 15px 0;
+        width: 80%;
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: -15px;
+        
+        
+        
+        color: var(--white);
+        text-decoration: none;
+        font-size: 36px;
+    
+        cursor: pointer;
+    
+        transition: 0.5s;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .button-area .signup {
+        background: var(--secondary);
+        padding: 15px 0;
+        width: 80%;
+        border-radius: 20px;
+        
+        color: var(--white);
+        text-decoration: none;
+        font-size: 36px;
+    
+        cursor: pointer;
+    
+        transition: 0.5s;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
 }
