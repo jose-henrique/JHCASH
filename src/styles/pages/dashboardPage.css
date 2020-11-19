@@ -1,39 +1,329 @@
 .container-dashboard{
     width: 100vw;
     height: 100vh;
+    background: #ededed;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.container-dashboard aside{
+    position: fixed;
+    width: 100px;
+    height: 100%;
     background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-dashboard aside p{
+    margin-top: 20px;
+    color: var(--secondary);
+    font-size: 35px;
+}
+
+
+.container-dashboard aside .main-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-dashboard aside .main-buttons button{
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.container-dashboard aside .main-buttons button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-dashboard aside button {
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    margin-bottom: 20px;
+}
+
+.container-dashboard .other-side{
+    width: 92.7%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.container-dashboard .other-side .main-header{
+    margin-top: 20px;
+    width: 90%;
+    border-bottom: 1px solid #a9a9a9;
+    padding-bottom: 15px;
+}
+
+.container-dashboard .other-side header p{
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.container-dashboard .other-side .content-area{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-dashboard .other-side .content-area .status-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 60px;
+    width: 40%;
+    height: 100%;
+    padding-right: 35px;
+
+    border-right: 1px solid #a9a9a9;
+}
+
+.container-dashboard .other-side .content-area .status-side p{
+    color: #000000;
+    font-size: 36px;
+}
+
+.container-dashboard .other-side .content-area .status-side .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-dashboard .other-side .content-area .status-side .top .earns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.container-dashboard .other-side .content-area .status-side .top .earns span{
+    color: #38D618;
+    font-size: 36px;
+    margin-top: 15px;
+}
+
+.container-dashboard .other-side .content-area .status-side .top .costs{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container-dashboard .btn-goBack{
-    top: 0;
-    left: 10px;
+.container-dashboard .other-side .content-area .status-side .top .costs span{
+    color: #ED1616;
+    font-size: 36px;
+    margin-top: 15px;
+}
 
-    position: absolute;
-    width: 56px;
-    height: 56px;
+.container-dashboard .other-side .content-area .status-side .bottom{
+    margin-top: 70px;
+}
 
-    background: none;
-    border: none;
+.container-dashboard .other-side .content-area .status-side .bottom .final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-dashboard .other-side .content-area .status-side .bottom .final span{
+    margin-top: 15px;
+    font-size: 64px;
+    color: #595959;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid var(--primary)
+}
+
+
+.container-dashboard .other-side .content-area .debts-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 50%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container-dashboard .other-side .content-area .debts-side::-webkit-scrollbar{
+    width: 5px;
+    background: #d7dee0;
+    border-radius: 20px;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.container-dashboard .other-side .content-area .debts-side::-webkit-scrollbar:hover{
+    background: #cbcfd1;
+    opacity: 1;
+}
+
+.container-dashboard .other-side .content-area .debts-side::-webkit-scrollbar-thumb{
+    background: var(--secondary);
+    border-radius: 30px;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+
+.container-dashboard .other-side .content-area .debts-side p{
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card1{
+    width: 520px;
+    height: 120px;
+    background: #C6CAC6;
+    border-radius: 20px;
+    border: 1px solid var(--primary);
+    display: flex;
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card1 .ilustration-part{
+    background: #1C84FF;
+    width: 120px;
+    border-radius: 20px;
+    border-right: 1px solid var(--primary);
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    cursor: pointer;
+    margin-right: 40px;
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card1 .information header{
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card1 .information p{
+    font-size: 24px;
+    margin-top: 13px;
 
 }
 
-.container-dashboard h1{
-    color: var(--secondary);
-    font-size: 89px;
+.container-dashboard .other-side .content-area .debts-side .debt-card1 .information strong{
+    font-size: 54px;
+    color: #ED1616;
+    margin-left: 15px;
 
 }
 
-.container-dashboard p {
-    font-size: 39px;
-    margin-left: 110px;
+
+.container-dashboard .other-side .content-area .debts-side .debt-card2{
+    margin-top: 40px;
+    width: 520px;
+    height: 120px;
+    background: #C6CAC6;
+    border-radius: 20px;
+    border: 1px solid var(--primary);
+    display: flex;
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card2 .ilustration-part{
+    background: #F2F616;
+    width: 120px;
+    border-radius: 20px;
+    border-right: 1px solid var(--primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 40px;
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card2 .information header{
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card2 .information p{
+    font-size: 24px;
+    margin-top: 13px;
+
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card2 .information strong{
+    font-size: 54px;
+    color: #ED1616;
+    margin-left: 15px;
+
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card3{
+    margin-top: 40px;
+    width: 520px;
+    height: 120px;
+    background: #C6CAC6;
+    border-radius: 20px;
+    border: 1px solid var(--primary);
+    display: flex;
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card3 .ilustration-part{
+    background: #128300;
+    width: 120px;
+    border-radius: 20px;
+    border-right: 1px solid var(--primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 40px;
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card3 .information header{
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card3 .information p{
+    font-size: 24px;
+    margin-top: 13px;
+
+}
+
+.container-dashboard .other-side .content-area .debts-side .debt-card3 .information strong{
+    font-size: 54px;
+    color: #ED1616;
+    margin-left: 15px;
+
 }

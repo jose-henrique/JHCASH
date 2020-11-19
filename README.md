@@ -17,11 +17,11 @@ i pretend update it soon, with real authenticate in backend, and a mobile versio
 
 ## 🔖 Next Steps
 
-- Real authenticate with backend
-- More animations
-- Working dashboard
-- New features for save money
-- Responsive functions
+- [] Real authenticate with backend
+- [] More animations
+- [x] Working dashboard
+- [] New features for save money
+- [] Responsive functions
 
 ### Login
 
@@ -37,3 +37,9 @@ i pretend update it soon, with real authenticate in backend, and a mobile versio
     <img alt="SIGNUP" src="gitimages/signup.png" width="100%"/>
 </p>
 
+
+### DashBoard
+
+<p align="center">
+    <img alt="DashBoard" src="gitimages/dashboardPage.png" width="100%"/>
+</p>
