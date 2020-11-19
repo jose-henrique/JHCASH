@@ -17,11 +17,11 @@ i pretend update it soon, with real authenticate in backend, and a mobile versio
 
 ## 🔖 Next Steps
 
-- [] Real authenticate with backend
-- [] More animations
+- [ ] Real authenticate with backend
+- [ ] More animations
 - [x] Working dashboard
-- [] New features for save money
-- [] Responsive functions
+- [ ] New features for save money
+- [ ] Responsive functions
 
 ### Login
 
