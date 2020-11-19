@@ -87,8 +87,7 @@ function DashboardPage(){
                                 <p>value: <strong>U$ 110,00</strong></p>
                             </div>
                         </div>
-                       
-                                                
+                         
                     </div>
                 </div>
              </div>

@@ -132,7 +132,7 @@
 }
 
 .container-dashboard .other-side .content-area .status-side .top .costs span{
-    color: #ED1616;
+    color: #ff002f;
     font-size: 36px;
     margin-top: 15px;
 }
@@ -152,7 +152,7 @@
     margin-top: 15px;
     font-size: 64px;
     color: #595959;
-    background: #ffffff;
+    background: #EDF7F6;
     border-radius: 20px;
     padding: 20px;
     border: 1px solid var(--primary)
@@ -163,10 +163,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 60px;
     width: 50%;
     overflow-y: scroll;
     overflow-x: hidden;
+    height: 480px;
 }
 
 .container-dashboard .other-side .content-area .debts-side::-webkit-scrollbar{
@@ -183,10 +184,14 @@
 }
 
 .container-dashboard .other-side .content-area .debts-side::-webkit-scrollbar-thumb{
-    background: var(--secondary);
+    background: #986feb;
     border-radius: 30px;
     opacity: 0.1;
     transition: 0.5s;
+}
+
+.container-dashboard .other-side .content-area .debts-side::-webkit-scrollbar-thumb:hover{
+    background: var(--primary); 
 }
 
 
@@ -199,14 +204,14 @@
 .container-dashboard .other-side .content-area .debts-side .debt-card1{
     width: 520px;
     height: 120px;
-    background: #C6CAC6;
+    background: #EDF7F6;
     border-radius: 20px;
     border: 1px solid var(--primary);
     display: flex;
 }
 
 .container-dashboard .other-side .content-area .debts-side .debt-card1 .ilustration-part{
-    background: #1C84FF;
+    background: #226dc9;
     width: 120px;
     border-radius: 20px;
     border-right: 1px solid var(--primary);
@@ -234,7 +239,7 @@
 
 .container-dashboard .other-side .content-area .debts-side .debt-card1 .information strong{
     font-size: 54px;
-    color: #ED1616;
+    color: #ff002f;
     margin-left: 15px;
 
 }
@@ -244,14 +249,14 @@
     margin-top: 40px;
     width: 520px;
     height: 120px;
-    background: #C6CAC6;
+    background: #EDF7F6;
     border-radius: 20px;
     border: 1px solid var(--primary);
     display: flex;
 }
 
 .container-dashboard .other-side .content-area .debts-side .debt-card2 .ilustration-part{
-    background: #F2F616;
+    background: #f7ec20;
     width: 120px;
     border-radius: 20px;
     border-right: 1px solid var(--primary);
@@ -279,7 +284,7 @@
 
 .container-dashboard .other-side .content-area .debts-side .debt-card2 .information strong{
     font-size: 54px;
-    color: #ED1616;
+    color: #ff002f;
     margin-left: 15px;
 
 }
@@ -288,14 +293,14 @@
     margin-top: 40px;
     width: 520px;
     height: 120px;
-    background: #C6CAC6;
+    background: #EDF7F6;
     border-radius: 20px;
     border: 1px solid var(--primary);
     display: flex;
 }
 
 .container-dashboard .other-side .content-area .debts-side .debt-card3 .ilustration-part{
-    background: #128300;
+    background: #06b35f;
     width: 120px;
     border-radius: 20px;
     border-right: 1px solid var(--primary);
@@ -323,7 +328,7 @@
 
 .container-dashboard .other-side .content-area .debts-side .debt-card3 .information strong{
     font-size: 54px;
-    color: #ED1616;
+    color: #ff002f;
     margin-left: 15px;
 
 }
