@@ -72,6 +72,10 @@
     padding-bottom: 15px;
 }
 
+.container-dashboard .other-side .mobile-header{
+    display: none;
+}
+
 .container-dashboard .other-side header p{
     color: #000000;
     font-size: 40px;
@@ -164,6 +168,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
+    margin-left: 15px;
     width: 50%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -202,7 +207,7 @@
 }
 
 .container-dashboard .other-side .content-area .debts-side .debt-card1{
-    width: 520px;
+    width: 90%;
     height: 120px;
     background: #EDF7F6;
     border-radius: 20px;
@@ -212,7 +217,7 @@
 
 .container-dashboard .other-side .content-area .debts-side .debt-card1 .ilustration-part{
     background: #226dc9;
-    width: 120px;
+    width: 25%;
     border-radius: 20px;
     border-right: 1px solid var(--primary);
 
@@ -238,7 +243,7 @@
 }
 
 .container-dashboard .other-side .content-area .debts-side .debt-card1 .information strong{
-    font-size: 54px;
+    font-size: 3.4rem;
     color: #ff002f;
     margin-left: 15px;
 
@@ -247,7 +252,7 @@
 
 .container-dashboard .other-side .content-area .debts-side .debt-card2{
     margin-top: 40px;
-    width: 520px;
+    width: 90%;
     height: 120px;
     background: #EDF7F6;
     border-radius: 20px;
@@ -257,7 +262,7 @@
 
 .container-dashboard .other-side .content-area .debts-side .debt-card2 .ilustration-part{
     background: #f7ec20;
-    width: 120px;
+    width: 25%;
     border-radius: 20px;
     border-right: 1px solid var(--primary);
 
@@ -291,7 +296,7 @@
 
 .container-dashboard .other-side .content-area .debts-side .debt-card3{
     margin-top: 40px;
-    width: 520px;
+    width: 90%;
     height: 120px;
     background: #EDF7F6;
     border-radius: 20px;
@@ -301,7 +306,7 @@
 
 .container-dashboard .other-side .content-area .debts-side .debt-card3 .ilustration-part{
     background: #06b35f;
-    width: 120px;
+    width: 25%;
     border-radius: 20px;
     border-right: 1px solid var(--primary);
 
@@ -330,5 +335,158 @@
     font-size: 54px;
     color: #ff002f;
     margin-left: 15px;
+
+}
+
+@media(max-width: 500px){
+    .container-dashboard aside{
+        display: none;
+    }
+
+    
+    .container-dashboard .other-side{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-dashboard .other-side .main-header{
+        display: none;
+    }
+    
+    .container-dashboard .other-side .mobile-header{
+        display: inline;
+        width: 100%;
+        height: 100px;
+        margin-top: 0px;
+        margin-left: -200px;
+        background: var(--primary);
+    }
+
+    .container-dashboard .other-side .mobile-header .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-dashboard .other-side .mobile-header .content p{
+        font-size: 48px;
+        color: var(--secondary);
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .container-dashboard .other-side .mobile-header .content button{
+        background: none;
+        border: none;
+        margin-right: 20px;
+        margin-top: 15px;
+
+        cursor: pointer;
+    }
+
+    .container-dashboard .other-side .content-area{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: -50%;
+    }
+    .container-dashboard .other-side .content-area .status-side{
+        width: 100%;
+        height: 30px;
+        margin-top: 0px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;  
+        border: none;
+        align-items: center;
+
+        border-bottom: 1px solid #a9a9a9;
+        padding-bottom: 10px;
+        
+    }
+    
+    .container-dashboard .other-side .content-area .status-side p{
+        color: #000000;
+        font-size: 16px;
+    }
+    
+    .container-dashboard .other-side .content-area .status-side .top{
+        width: 100%;
+    }
+    
+    .container-dashboard .other-side .content-area .status-side .top .earns{
+        flex-direction: row;
+        margin-right: 15px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 4%;
+    }
+    
+    .container-dashboard .other-side .content-area .status-side .top .earns span{
+        color: #38D618;
+        font-size: 1.3rem;
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+
+    .container-dashboard .other-side .content-area .status-side .top .costs{
+        margin-right: 2%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container-dashboard .other-side .content-area .status-side .top .costs span{
+        color: #ff002f;
+        font-size: 1.3rem;
+        margin-top: 0;
+        margin-left: 5px;
+    }
+    
+    .container-dashboard .other-side .content-area .status-side .bottom{
+        display: none;
+    }
+
+    .container-dashboard .other-side .content-area .debts-side {
+        margin-top: 0;
+        width: 100%;
+        height: 420px;
+        margin-left: -7%;
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card1 .information header{
+        margin-left: -20px;
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card2 .information header{
+        margin-left: -20px;
+
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card3 .information header{
+        margin-left: -20px;
+
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card1 .information strong{
+        font-size: 2rem;
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card2 .information strong{
+        font-size: 2rem;
+
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card3 .information strong{
+        font-size: 2rem;
+
+    }   
+
+    .container-dashboard .other-side .content-area .debts-side  .information p{
+        margin-left: -20px;
+    
+    }
 
 }

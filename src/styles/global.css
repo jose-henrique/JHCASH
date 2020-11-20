@@ -22,3 +22,7 @@ body, input, btton, textarea {
     --button: #433CBD;
     --button-hover: #332E8B;
 }
+
+header{
+    font-size: 36px;
+}

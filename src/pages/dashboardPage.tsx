@@ -7,8 +7,9 @@ import { useHistory } from 'react-router-dom';
 import { MdSettings, MdControlPoint } from 'react-icons/md';
 import { SiCashapp } from 'react-icons/si';
 import {  BiLogOut, BiWifi } from 'react-icons/bi';
-import { GiTap } from 'react-icons/gi'
-import { BsLightningFill } from 'react-icons/bs'
+import { GiTap } from 'react-icons/gi';
+import { BsLightningFill } from 'react-icons/bs';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 
 
@@ -38,6 +39,14 @@ function DashboardPage(){
              <div className="other-side">
                 <header className="main-header">
                     <p>My finances</p>
+                </header>
+                <header className="mobile-header">
+                    <div className="content">
+                        <p>JHCASH</p>
+                        <button>
+                            <GiHamburgerMenu size={56} color="#38D618"/>
+                        </button>
+                    </div>
                 </header>
                 <div className="content-area">
                     <div className="status-side">
