@@ -251,7 +251,7 @@
 
 
 .container-dashboard .other-side .content-area .debts-side .debt-card2{
-    margin-top: 40px;
+    margin-top: 20px;
     width: 90%;
     height: 120px;
     background: #EDF7F6;
@@ -295,7 +295,7 @@
 }
 
 .container-dashboard .other-side .content-area .debts-side .debt-card3{
-    margin-top: 40px;
+    margin-top: 20px;
     width: 90%;
     height: 120px;
     background: #EDF7F6;
@@ -338,10 +338,153 @@
 
 }
 
-@media(max-width: 500px){
+@media(max-width: 400px){
+    .container-dashboard .other-side .content-area .status-side .top .earns{
+        margin-left: 2%;
+    }
+
+    .container-dashboard .other-side .content-area .debts-side {
+        margin-right: 15%;
+    }
+
+    
+}
+
+
+@media(max-width: 700px){
+   
+    @keyframes aparece{
+        from {
+            opacity: 0;
+            transform:  translateY(-100px);
+        }to{
+            opacity: 0.9;
+            transform:  translateY(0px);
+        }
+    }
+
+    @keyframes desaparece{
+        from {
+            opacity: 0.9;
+            transform:  translateY(0px);
+        }to{
+            opacity: 0;
+            transform:  translateY(-100px);
+        }
+    }
+
+    @keyframes aparece-menu{
+        from {
+            opacity: 0;
+            transform: scale(0.1) rotate(-90deg);
+        }to{
+            opacity: 1;
+            transform: scale(1) rotate(0deg);
+        }
+    }
+
+    @keyframes desaparece-menu{
+        from {
+            opacity: 0;
+            transform: scale(0.1) rotate(0deg);
+        }to{
+            opacity: 1;
+            transform: scale(1) rotate(-90deg);
+        }
+    }
+    
+
     .container-dashboard aside{
         display: none;
     }
+
+    .nav-menu::before{
+        animation-name: desaparece;
+        animation-duration: 1s;
+    }
+
+    .nav-menu{
+        visibility: hidden;
+    }
+
+    .nav-menu-active{
+        display: absolute;
+        z-index: 2;
+
+        width: 100%;
+        height: 20%;
+
+        background: var(--primary);
+        opacity: 0.9;
+
+        margin-left: 0;
+        margin-top: -10px;
+
+        animation-name: aparece;
+        animation-duration: 1s;
+
+        border-radius: 0 0 20px 70px;
+    }
+
+    .nav-menu-active .nav-menu-items .nav-toggle{
+        border-bottom: 1px solid #a9a9a9;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px 0;
+        
+    }
+
+    .nav-menu-active .nav-menu-items .out-item{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: -5px;
+        padding-bottom: 10px;
+    }   
+    
+    .nav-menu-active .nav-menu-items .nav-toggle .menu-bars{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .nav-menu-active .nav-menu-items .nav-toggle .menu-bars .text{
+        font-size: 30px;
+        color: #fefefe;
+        margin-left: 10px;
+    }
+
+    #hamburguer{
+        display: none;
+    }
+
+    #x-button{
+        display: none;
+    }
+
+    #hamburguer-active{
+        display: inline;
+        animation-name: aparece-menu;
+        animation-duration: 1s;
+    }
+
+    #x-button-active{
+        display: inline;
+        animation-name: desaparece-menu;
+        animation-duration: 1s;
+    }
+
+    
+
+
+
+
+
+
+
 
     
     .container-dashboard .other-side{
@@ -363,24 +506,28 @@
     }
 
     .container-dashboard .other-side .mobile-header .content{
+        display: relative;
+    }
+    .container-dashboard .other-side .mobile-header .content .navbar{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 4.7%;
     }
 
-    .container-dashboard .other-side .mobile-header .content p{
+    .container-dashboard .other-side .mobile-header .content .title{
         font-size: 48px;
         color: var(--secondary);
         margin-left: 20px;
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     .container-dashboard .other-side .mobile-header .content button{
         background: none;
         border: none;
         margin-right: 20px;
-        margin-top: 15px;
+        margin-top: 20px;
 
         cursor: pointer;
     }
@@ -390,17 +537,18 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: -50%;
+        margin-left: -37%;
     }
     .container-dashboard .other-side .content-area .status-side{
         width: 100%;
         height: 30px;
         margin-top: 0px;
-        margin-left: 0;
+        margin-left: -9%;
         display: flex;
         flex-direction: row;  
         border: none;
         align-items: center;
+        justify-content: center;
 
         border-bottom: 1px solid #a9a9a9;
         padding-bottom: 10px;
@@ -421,7 +569,7 @@
         margin-right: 15px;
         align-items: center;
         justify-content: center;
-        margin-left: 4%;
+        margin-left: 9%;
     }
     
     .container-dashboard .other-side .content-area .status-side .top .earns span{
@@ -452,8 +600,8 @@
     .container-dashboard .other-side .content-area .debts-side {
         margin-top: 0;
         width: 100%;
-        height: 420px;
-        margin-left: -7%;
+        height: 470px;
+        margin-left: 0;
     }
 
     .container-dashboard .other-side .content-area .debts-side .debt-card1 .information header{
@@ -489,4 +637,69 @@
     
     }
 
+}
+@media(max-width: 300px){
+
+    .container-dashboard .other-side .content-area .status-side .top .earns{
+        margin-left: 2%;
+    }
+    .container-dashboard .other-side .content-area .debts-side{
+        margin-left: -50px;
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card1 .information header{
+        margin-left: -20px;
+        font-size: 1.8rem;
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card2 .information header{
+        margin-left: -20px;
+        font-size: 1.8rem;
+
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card3 .information header{
+        margin-left: -20px;
+        font-size: 1.8rem;
+
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card1 .information strong{
+        font-size: 1.6rem;
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card2 .information strong{
+        font-size: 1.6rem;
+
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card3 .information strong{
+        font-size: 1.6rem;
+
+    }   
+
+    .container-dashboard .other-side .content-area .debts-side  .information p{
+        margin-left: -20px;
+    
+    }
+}
+
+@media(max-width: 1100px){
+    .container-dashboard .other-side .content-area .status-side .top .earns{
+        margin-right: 0px;
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card1 .information strong{
+        font-size: 1.2rem;
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card2 .information strong{
+        font-size: 1.2rem;
+
+    }
+
+    .container-dashboard .other-side .content-area .debts-side .debt-card3 .information strong{
+        font-size: 1.2rem;
+
+    } 
 }
