@@ -1,0 +1,53 @@
+.container-dashboard aside{
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-dashboard aside p{
+    margin-top: 20px;
+    color: var(--secondary);
+    font-size: 35px;
+}
+
+
+.container-dashboard aside .main-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-dashboard aside .main-buttons .button{
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-decoration: none;
+
+}
+
+.container-dashboard aside button {
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    margin-bottom: 20px;
+}
+
+@media(max-width: 700px){
+    
+    .container-dashboard aside{
+        display: none;
+    }
+}
