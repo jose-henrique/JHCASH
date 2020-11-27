@@ -18,7 +18,7 @@ i pretend update it soon, with real authenticate in backend, and a mobile versio
 ## 🔖 Next Steps
 
 - [ ] Real authenticate with backend
-- [ ] More animations
+- [x] More animations
 - [x] Working dashboard
 - [ ] New features for save money
 - [ ] Responsive functions
@@ -42,4 +42,16 @@ i pretend update it soon, with real authenticate in backend, and a mobile versio
 
 <p align="center">
     <img alt="DashBoard" src="gitimages/dashboardPage.png" width="100%"/>
+</p>
+
+
+### Add earns and costs
+
+
+<p align="center">
+    <img alt="AddPage" src="gitimages/addPage.png" width="100%"/>
+</p>
+
+<p align="center">
+    <img alt="AddPage with input blocks" src="gitimages/addPageWP.png" width="100%"/>
 </p>
